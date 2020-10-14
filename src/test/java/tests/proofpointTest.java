@@ -1,9 +1,14 @@
 package tests;
 
+import java.util.ArrayList;
+
 public class proofpointTest {
 
     public static void main(String[] args) {
         printFibonacciRow(10);
+        for (int i=0; i<10;i++){
+            System.out.println(returnFibonacci());
+        }
     }
 
     public static void printFibonacciRow (int n){
@@ -17,4 +22,9 @@ public class proofpointTest {
             num2 = sum;
         }
     }
+
+    public static int returnFibonacci (){
+        proofPointConstructor pf = new proofPointConstructor();
+            return 0;
+        }
 }
