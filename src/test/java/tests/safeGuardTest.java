@@ -10,6 +10,11 @@ public class safeGuardTest {
 //
 //    For multiples of both 3 and 5, print “fizzbuzz” instead of the number
 
+    safeGuardTest cmon = new safeGuardTest();
+    int fizz = 3;
+    int buzz = 5;
+    String whatever = "cool!";
+
     public static void main(String[] args) {
         fizzBuzz(100);
     }
@@ -22,5 +27,11 @@ public class safeGuardTest {
                 System.out.println(i);
             }
         }
+    }
+    public void safeGuardTest (int a, int b, String whats){
+        this.fizz = a;
+        this.buzz = b;
+        this.whatever = whats;
+        this.cmon = new safeGuardTest();
     }
 }
