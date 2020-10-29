@@ -10,15 +10,15 @@ public class safeGuardTest {
 //
 //    For multiples of both 3 and 5, print “fizzbuzz” instead of the number
 
-    safeGuardTest cmon = new safeGuardTest();
     int fizz = 3;
     int buzz = 5;
     String whatever = "cool!";
 
     public static void main(String[] args) {
         fizzBuzz(100);
-    }
-    public static void fizzBuzz (int n){
+        }
+
+        public static void fizzBuzz (int n){
         for (int i=1; i<=n;i++){
             if (i%3==0) System.out.println("fizz");
             if (i%5==0) System.out.println("buzz");
@@ -28,10 +28,14 @@ public class safeGuardTest {
             }
         }
     }
-    public void safeGuardTest (int a, int b, String whats){
+    public void safeGuard (int a, int b, String whats){
+        safeGuardTest cmon = new safeGuardTest();
+        cmon.whatever = "Good point";
+        cmon.fizz = 365;
+        cmon.buzz = 200;
         this.fizz = a;
         this.buzz = b;
         this.whatever = whats;
-        this.cmon = new safeGuardTest();
+        System.out.println(cmon.whatever);
     }
 }
